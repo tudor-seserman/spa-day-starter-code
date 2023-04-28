@@ -24,3 +24,32 @@ table {
             padding: 10px;
             text-align: center;
 }
+
+.colorSamples{
+margin: auto;
+        height: 10px;
+        width: 10px;
+  display: inline-block;
+
+}
+
+#red{
+background-color:red;
+}
+
+#blue{
+background-color: blue;
+}
+
+#green{
+background-color: green;
+}
+
+#navy{
+background-color: navy;
+}
+
+#container{
+margin: auto;
+        width: 50%;
+}
