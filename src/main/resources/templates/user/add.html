@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8"/>
+    <link href="../static/css/styles.css" th:href="@{/css/styles.css}" rel="stylesheet" />
+    <title>Add New User</title>
+</head>
+<body>
+<form method="post">
+    <div class="form-group">
+        <label> Username
+            <input type="text" th:field="${user.username}">
+        </label>
+    </div>
+    <div class="form-group">
+        <label> Email
+            <input type="email" th:field="${user.email}">
+        </label>
+    </div>
+    <div class="form-group">
+        <label> Password
+            <input type="password" th:field="${user.password}">
+        </label>
+    </div>
+    <div class="form-group">
+        <label> Verify Password
+            <input type="password" name="verify">
+        </label>
+        <div  style="color:red" th:if="${warning}" th:text="${warning}"></div>
+    </div>
+    <div>
+    <input type="submit" value="Sign Up!"  class="btn btn-success">
+    </div>
+</form>
+
+</body>
+</html>
+
