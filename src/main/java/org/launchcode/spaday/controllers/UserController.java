@@ -32,6 +32,7 @@ public class UserController {
 //            return "user/add";
 //        }
         if(errors.hasErrors()){
+            model.addAttribute(user);
             return "user/add";
         }
         return "user/index";

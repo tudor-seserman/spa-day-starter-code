@@ -19,12 +19,12 @@
 
         <label>
             Password:
-            <input type = 'password'  th:field="${user.password}">
+            <input type = 'text'  th:field="${user.password}">
         </label>
 
         <label>
             Verify Password:
-            <input type = 'password' th:field="${user.verifyPassword}">
+            <input type = 'text' th:field="${user.verifyPassword}">
             <p class="error" th:errors="${user.verifyPassword}"></p>
         </label>
 
